@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <table
+        width="1100"
+        border="0"
+        cellspacing="0"
+        align="center"
+        id="mbr_search"
+      >
+        <tr>
+          <td>
+            <div class="search-container">
+              <div class="input-field">
+                <label>플랜트명</label>
+                <asp:TextBox
+                  ID="txtPlantName"
+                  runat="server"
+                  placeholder="플랜트명 입력"
+                />
+              </div>
+              <div class="input-field">
+                <label>RTU 번호</label>
+                <asp:TextBox
+                  ID="txtRTUNumber"
+                  runat="server"
+                  placeholder="RTU 번호 입력"
+                />
+              </div>
+              <div class="input-field">
+                <label>전화번호</label>
+                <asp:TextBox
+                  ID="txtPhone"
+                  runat="server"
+                  placeholder="전화번호 마지막 4자리"
+                  MaxLength="4"
+                />
+              </div>
+              <div class="input-field">
+                <label>주소</label>
+                <asp:TextBox
+                  ID="txtAddress"
+                  runat="server"
+                  placeholder="주소 입력"
+                />
+              </div>
+              <div class="input-field">
+                <label style="visibility: hidden">조회</label>
+                <input
+                  type="submit"
+                  runat="server"
+                  id="btnSearch"
+                  value="조회"
+                />
+              </div>
+            </div>
+
+            관리자로접속:&nbsp;
+            <input
+              type="button"
+              runat="server"
+              value="Solarcube"
+              id="sol_btn"
+              style="height: 40px; width: 120px"
+            />&nbsp;
+            <input
+              type="button"
+              runat="server"
+              value=" DNE "
+              id="dne_btn"
+              style="height: 40px; width: 120px"
+            />&nbsp;
+            <input
+              type="button"
+              runat="server"
+              value=" HYOSUNG PV "
+              id="HSPV"
+              style="height: 40px; width: 120px"
+            />&nbsp;
+            <input
+              type="button"
+              runat="server"
+              value=" HYOSUNG ESS "
+              id="HSESS"
+              style="height: 40px; width: 120px"
+            />&nbsp;
+            <input
+              type="button"
+              runat="server"
+              value=" 융복합  "
+              id="yj_btn"
+              style="height: 40px; width: 120px"
+            />&nbsp;
+            <input
+              type="button"
+              runat="server"
+              value="에너지자립마을"
+              id="eit_btn"
+              style="height: 40px; width: 120px"
+            />&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input
+              type="button"
+              runat="server"
+              value="전문기업 회원관리"
+              id="Button1"
+              onclick="javascript:location.href='/SrMebMng/SMM010.aspx'"
+              style="height: 40px; width: 125px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td style="height: 6px" colspan="2"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
